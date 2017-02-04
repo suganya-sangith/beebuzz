@@ -1,0 +1,12 @@
+development: &appconfig
+  domain: beebuzz.lvh.me:5000
+  domain_without_port: beebuzz.lvh.me
+  port: 5000
+  scheme: http://
+  protocol: http
+
+production:
+  <<: *appconfig
+
+staging:
+  <<: *appconfig
